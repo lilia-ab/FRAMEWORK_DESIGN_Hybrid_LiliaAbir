@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.MyListeners.Listeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.Test_Cases.Checkout_Test">
+        <methods>
+          <include name="checkOut"/>
+          <include name="tearDown"/>
+          <include name="completeCheckOutSetup"/>
+        </methods>
+      </class> <!-- com.Test_Cases.Checkout_Test -->
+      <class name="com.Test_Cases.Add_To_Cart_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateCompleteCheckoutWithValidProductPositiveFlow"/>
+          <include name="completeCheckOutSetup"/>
+        </methods>
+      </class> <!-- com.Test_Cases.Add_To_Cart_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
